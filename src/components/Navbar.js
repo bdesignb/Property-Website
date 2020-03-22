@@ -68,12 +68,12 @@ export default class Navbar extends Component {
 					<div className={classOne} id="navbar">
 						<ul className="navbar-nav ml-auto">
 							<li className="nav-item">
-								<Link className="nav-link" to="/">
+								<Link className="nav-link" to={process.env.PUBLIC_URL + '/'}>
 									home
 								</Link>
 							</li>
 							<li className="nav-item">
-								<Link className="nav-link" to="/property">
+								<Link className="nav-link" to={process.env.PUBLIC_URL + '/property'}>
 									Property
 								</Link>
 							</li>

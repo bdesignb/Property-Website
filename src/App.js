@@ -10,8 +10,8 @@ class App extends Component {
 		return (<>
 			<Navbar />
 			<Switch>
-				<Route exact path='/' component={Home} />
-				<Route exact path='/property' component={Property} />
+				<Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+				<Route exact path={process.env.PUBLIC_URL + '/property'} component={Property} />
 			</Switch>
 		</>
 		);
