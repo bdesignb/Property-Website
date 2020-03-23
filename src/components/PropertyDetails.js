@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 export default class PropertyDetails extends Component {
 
-  render() {  
+  render() {
 
     let filterProperty = this.props.property.filter((property) => property.category === 'new')
 
@@ -29,13 +29,13 @@ export default class PropertyDetails extends Component {
                         <span className="amount">${property.price} / For rent</span>
                       )}
                   </span>
-                  <a href={process.env.PUBLIC_URL + '/Property'}><i className='fas fa-arrow-right'></i></a>
+                  <Link to={process.env.PUBLIC_URL + '/Property'}><i className='fas fa-arrow-right'></i>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </Carousel.Item>
-
       )
     });
 
@@ -45,17 +45,17 @@ export default class PropertyDetails extends Component {
           <div class="container">
             {/* <div class="row">
               <div class="col-xl-12"> */}
-                <div class="single_details">
-                  <div class="row">
-                    <div class="col-xl-6 col-md-6">
-                      <Carousel controls={false}>
-                        {property}
-                      </Carousel>
-                    </div>
-                  </div>
+            <div class="single_details">
+              <div class="row">
+                <div class="col-xl-6 col-md-6">
+                  <Carousel controls={false}>
+                    {property}
+                  </Carousel>
                 </div>
               </div>
-            {/* </div>
+            </div>
+          </div>
+          {/* </div>
           </div> */}
         </div>
       </>

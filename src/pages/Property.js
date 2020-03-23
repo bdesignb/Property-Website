@@ -13,7 +13,7 @@ const Property = () => {
                     <div className="col-md-12 text-center">
                         <Link to={process.env.PUBLIC_URL + '/'} className="hero-btn">
                             return home
-                            </Link>
+                        </Link>
                     </div>
                 </Banner>
             </Hero>
