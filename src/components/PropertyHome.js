@@ -22,21 +22,20 @@ export default class PropertyHome extends Component {
 		return (
 			<section className="property">
 				<div className="container">
-					<Title 
-					title="featured property" 
-					subtitle='Explore featured propertis in San Francisco selected from our real estate agents'/>
+					<Title
+						title="featured property"
+						subtitle='Explore featured propertis in San Francisco selected from our real estate agents' />
 					<div className="row">
 						{/* {popularProperty} */}
 						{this.state.popularProperty.map((property) => {
 							return <Property key={property.id} property={property} />;
 						})}
 					</div>
-					<div className="row mt-5 justify-content-md-center">
-						<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-						<a href='property' className="btn-line">
-                            view more
+					<div className="row">
+						<div className="col-12 d-flex flex-row justify-content-center">
+							<a href={process.env.PUBLIC_URL + '/Property'} className="btn-line">
+								view more
                         </a>
-							
 						</div>
 					</div>
 				</div>

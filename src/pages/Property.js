@@ -11,7 +11,7 @@ const Property = () => {
             <Hero hero='hero'>
                 <Banner title='search' titlespan='property' subtitle='find your best property'>
                     <div className="col-md-12 text-center">
-                        <Link to='/' className="hero-btn">
+                        <Link to={process.env.PUBLIC_URL + '/'} className="hero-btn">
                             return home
                             </Link>
                     </div>

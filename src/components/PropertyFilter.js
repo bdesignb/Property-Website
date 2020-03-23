@@ -29,8 +29,8 @@ export default function PropertyFilter({ property, handleChange }) {
 	return (
 		<div className="py-5">
 			<div className="container ">
-				<form className="row justify-content-md-center">			
-					<div className="col-sm-6 col-md-4 col-lg-2 mb-3">
+				<form className="row justify-content-center">			
+					<div className="col-sm-6 col-md-4 col-lg-2 mb-3 d-flex flex-row justify-content-center">
 						<select
 							name="category"
 							id="category"
@@ -40,7 +40,7 @@ export default function PropertyFilter({ property, handleChange }) {
 							{category}
 						</select>
 					</div>
-					<div className="col-sm-6 col-md-4 col-lg-2 mb-3">
+					<div className="col-sm-6 col-md-4 col-lg-2 mb-3 d-flex flex-row justify-content-center">
 						<select
 							name="tag"
 							id="tag"
@@ -50,9 +50,6 @@ export default function PropertyFilter({ property, handleChange }) {
 							{tag}
 						</select>
 					</div>				
-					<div className="col-sm-6 col-md-4 col-lg-2">
-						<a href='/' className="btn-line btn-block">home</a>
-					</div>
 				</form>
 			</div>
 		</div>
